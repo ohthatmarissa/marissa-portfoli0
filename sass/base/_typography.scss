@@ -7,3 +7,34 @@ body{
     padding: 30px;
     background-color: $color-black;
 }
+
+h1::-moz-selection {
+    color: var(--neon-text-color);
+  }
+  
+  h1::selection {
+    color: var(--neon-text-color);
+  }
+  
+  h1:focus {
+    outline: none;
+  }
+  
+
+.header-secondary {
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: 15px;
+    animation: flicker 15s infinite alternate; 
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h3 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
