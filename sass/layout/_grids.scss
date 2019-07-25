@@ -2,7 +2,7 @@
 .grid {
     display: grid;
     grid-template-rows: repeat(5, 25%);
-    grid-template-columns: 50% repeat(5, 1fr);
+    grid-template-columns: 50% repeat(5, 10%);
 }
 
 .about-title-1 {
