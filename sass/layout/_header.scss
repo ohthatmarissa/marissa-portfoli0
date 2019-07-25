@@ -2,7 +2,7 @@
     height: 100vh;
     background-color: $color-black;
     background-image: linear-gradient(0deg, $color-pink-dark, $color-black 40%);
-    // clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 
 
     &__text-box {

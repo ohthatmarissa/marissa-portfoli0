@@ -1,7 +1,7 @@
 .btn-text {
     &:link,
     &:visited {
-        color: $color-black;
+        color: $color-white;
         display: inline;
         text-decoration: none;
         padding: 3px;
@@ -9,10 +9,10 @@
     }
 
     &:hover {
-        background-color: $color-black;
-        color: $color-white;
+        background-color: $color-primary;
+        color: $color-black;
         border-radius: 5px;
-        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        box-shadow: 0 1rem 2rem rgba($color-white);
     }
 
     &:active {
