@@ -71,8 +71,7 @@ h3 {
 .header {
   height: 100vh;
   background-color: black;
-  background-image: linear-gradient(0deg, rgba(255, 0, 179, 0.541), black 40%);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
+  background-image: linear-gradient(0deg, rgba(255, 0, 179, 0.541), black 40%); }
   .header__text-box {
     position: absolute;
     top: 50%;
@@ -84,8 +83,7 @@ h3 {
     text-align: center;
     animation: moveInLeft 5s; }
   .header-primary--main {
-    display: block;
-    font-size: 20rem;
+    font-size: 17rem;
     font-weight: 400;
     font-style: italic;
     animation: flicker 4s infinite alternate; }
@@ -96,21 +94,20 @@ h3 {
 
 .grid {
   display: grid;
-  grid-template-rows: repeat(5, 25%);
-  grid-template-columns: 50% repeat(5, 10%); }
+  grid-template-rows: repeat(6, 20%);
+  grid-template-columns: repeat(12, 9%); }
 
 .about-title-1 {
-  grid-row: 2/span 1;
-  grid-column: 1/span 1; }
-
-.about-title-2 {
-  grid-row: 4/span 1;
-  grid-column: 1/span 1; }
+  grid-row: 1/span 5;
+  grid-column: 1/span 5;
+  background-color: pink;
+  padding: 10px;
+  border-radius: 2px; }
+  .about-title-1 p {
+    color: black; }
 
 .section-about {
-  height: 100vh;
-  background-color: black;
-  padding: 10rem; }
+  background-color: rgba(255, 0, 179, 0.541); }
 
 .btn-text:link, .btn-text:visited {
   color: white;
@@ -120,10 +117,10 @@ h3 {
   transition: all .2s; }
 
 .btn-text:hover {
-  background-color: black;
+  background-color: rgba(255, 0, 179, 0.541);
   color: white;
   border-radius: 5px;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 1rem 2rem white; }
 
 .btn-text:active {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
@@ -136,21 +133,21 @@ h3 {
 
 #one {
   grid-row: 2/span 2;
-  grid-column: 2/span 3;
+  grid-column: 7/span 5;
   width: 100%;
   border-radius: 2px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
 
 #two {
   grid-row: 3/span 2;
-  grid-column: 4/span 3;
+  grid-column: 6/span 5;
   width: 100%;
   border-radius: 2px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
 
 #three {
   grid-row: 4/span 2;
-  grid-column: 2/span 3;
+  grid-column: 7/span 5;
   width: 100%;
   border-radius: 2px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }

@@ -2,7 +2,7 @@
     height: 100vh;
     background-color: $color-black;
     background-image: linear-gradient(0deg, $color-pink-dark, $color-black 40%);
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    // clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 
 
     &__text-box {
@@ -20,8 +20,8 @@
     }
 
     &-primary--main {
-        display: block;
-        font-size: 20rem;
+        // display: block;
+        font-size: 17rem;
         font-weight: 400;
         font-style: italic;
         animation: flicker 4s infinite alternate; 

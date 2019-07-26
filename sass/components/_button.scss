@@ -9,10 +9,10 @@
     }
 
     &:hover {
-        background-color: $color-primary;
-        color: $color-black;
+        background-color: $color-pink-dark;
+        color: $color-white;
         border-radius: 5px;
-        box-shadow: 0 1rem 2rem rgba($color-white);
+        box-shadow: 0 1rem 2rem $color-white;
     }
 
     &:active {
