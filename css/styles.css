@@ -106,8 +106,19 @@ h3 {
   .about-title-1 p {
     color: black; }
 
+.grid2 {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 5rem; }
+
 .section-about {
+  padding-bottom: 10rem;
   background-color: rgba(255, 0, 179, 0.541); }
+
+.section-projects {
+  background-image: linear-gradient(180deg, rgba(255, 0, 179, 0.541), black 40%);
+  padding: 10rem 2rem 50rem 2rem; }
 
 .btn-text:link, .btn-text:visited {
   color: white;
@@ -126,7 +137,7 @@ h3 {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
 
 .collage:hover {
-  transform: scale(1.25);
+  transform: scale(1.25) translateY(5px);
   transition: all .3s;
   outline: 1.5rem solid #911c6d;
   outline-offset: 2rem; }
@@ -151,5 +162,29 @@ h3 {
   width: 100%;
   border-radius: 2px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
+
+.card {
+  perspective: 150rem;
+  position: relative;
+  height: 40rem; }
+  .card__side {
+    border-radius: 2px;
+    height: 40rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden; }
+    .card__side--front {
+      background-color: white; }
+    .card__side--back {
+      background-color: pink;
+      color: black;
+      transform: rotateY(180deg); }
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
 
 /*with BEM (block element modifier)*/

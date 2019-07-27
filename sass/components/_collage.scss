@@ -1,5 +1,5 @@
 .collage:hover {
-    transform: scale(1.25);
+    transform: scale(1.25) translateY(5px);
     transition: all .3s;
     outline: 1.5rem solid $color-pink-dark-solid;
     outline-offset: 2rem;
