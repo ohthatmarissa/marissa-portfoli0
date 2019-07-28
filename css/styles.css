@@ -175,11 +175,12 @@ h3 {
     top: 0;
     left: 0;
     width: 100%;
-    backface-visibility: hidden; }
+    backface-visibility: hidden;
+    box-shadow: -0.2rem -0.2rem 1rem white, 0.2rem 0.2rem 1rem white, 0 0 2rem var(--neon-text-color), 0 0 4rem var(--neon-text-color); }
     .card__side--front {
-      background-color: white; }
+      background-color: pink; }
     .card__side--back {
-      background-color: pink;
+      background-image: linear-gradient(to bottom right, white, pink);
       color: black;
       transform: rotateY(180deg); }
   .card:hover .card__side--front {
