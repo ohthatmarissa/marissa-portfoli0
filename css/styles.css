@@ -239,7 +239,13 @@ h3 {
     background-size: cover;
     height: 23rem; }
     .card__image--1 {
-      background-image: url(../assets/milk2.png); }
+      background-image: url(../assets/milk1.png); }
+    .card__image--2 {
+      background-image: url(../assets/monster1.png); }
+    .card__image--3 {
+      background-image: url(../assets/blog1.png); }
+    .card__image--4 {
+      background-image: url(../assets/retail1.png); }
   .card__links {
     position: absolute;
     top: 50%;

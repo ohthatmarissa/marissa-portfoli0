@@ -6,7 +6,6 @@
     text-align: center;
 
     &__side {
-        
         border-radius: 2px;
         height: 35rem;
         transition: all .8s ease;
@@ -56,7 +55,19 @@
         // clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     
         &--1 {
-            background-image: url(../assets/milk2.png);
+            background-image: url(../assets/milk1.png);
+        }
+
+        &--2 {
+            background-image: url(../assets/monster1.png);
+        }
+
+        &--3 {
+            background-image: url(../assets/blog1.png);
+        }
+
+        &--4 {
+            background-image: url(../assets/retail1.png);
         }
     }
 
