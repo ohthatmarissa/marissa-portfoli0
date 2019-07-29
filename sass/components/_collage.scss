@@ -32,9 +32,9 @@
 
 #three {
     grid-row: 5/span 4;
-    grid-column: 7/span 5;
-    width: 100%;
-    transform: rotate(4deg);
+    grid-column: 8/span 5;
+    width: 85%;
+    transform: rotate(0deg);
     border-radius: 2px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
 }
@@ -42,8 +42,8 @@
 #four {
     grid-row: 7/span 4;
     grid-column: 6/span 5;
-    width: 85%;
-    transform: rotate(8deg);
+    width: 100%;
+    transform: rotate(18deg);
     border-radius: 2px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
 }
