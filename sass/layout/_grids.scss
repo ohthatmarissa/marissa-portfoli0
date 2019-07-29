@@ -1,14 +1,14 @@
 //home page about
 .grid {
     display: grid;
-    grid-template-rows: repeat(6, 15%);
-    grid-template-columns: repeat(12, 9%);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(12, 1fr);
 }
 
 .grid2 {
     display: grid;
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 5rem;
 }
 

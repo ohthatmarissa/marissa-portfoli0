@@ -9,13 +9,54 @@
     }
 
     &:hover {
-        background-color: $color-pink-dark;
-        color: $color-white;
-        border-radius: 5px;
-        box-shadow: 0 1rem 2rem $color-white;
+        color: $color-pink-dark-solid;
+        
     }
 
     &:active {
         box-shadow: 0 1rem 2rem rgba($color-black, .15);
     }
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-pink-dark-solid;
+    padding: 5px 40px;
+    display: inline-block;
+    border-radius: 40px;
+    background-color: $color-white;
+    transition: all .2s;
+    position: relative;
+
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px $color-pink-dark;
+    }
+
+    &:active {
+        transform: translateY(-1px);
+    }
+
+    &::after {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 40px;
+        background-color: $color-white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+
+    &:hover::after {
+        transform: scaleX(1.4) scaleY(1.6); 
+        opacity: 0;
+    }
+
 }

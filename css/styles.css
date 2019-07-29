@@ -68,6 +68,10 @@ h3 {
   letter-spacing: 5px;
   text-shadow: 1rem 1rem 2rem black; }
 
+.project-title {
+  color: black;
+  text-shadow: none; }
+
 .header {
   height: 100vh;
   background-color: black;
@@ -94,13 +98,13 @@ h3 {
 
 .grid {
   display: grid;
-  grid-template-rows: repeat(6, 15%);
-  grid-template-columns: repeat(12, 9%); }
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(12, 1fr); }
 
 .grid2 {
   display: grid;
-  grid-template-rows: 50% 50%;
-  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 5rem; }
 
 .section-about {
@@ -108,7 +112,7 @@ h3 {
   background-color: rgba(255, 0, 179, 0.541); }
 
 .about-title-1 {
-  grid-row: 1/span 6;
+  grid-row: 2/span 4;
   grid-column: 1/span 5;
   background-color: pink;
   padding: 10px;
@@ -128,13 +132,46 @@ h3 {
   transition: all .2s; }
 
 .btn-text:hover {
-  background-color: rgba(255, 0, 179, 0.541);
-  color: white;
-  border-radius: 5px;
-  box-shadow: 0 1rem 2rem white; }
+  color: #911c6d; }
 
 .btn-text:active {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #911c6d;
+  padding: 5px 40px;
+  display: inline-block;
+  border-radius: 40px;
+  background-color: white;
+  transition: all .2s;
+  position: relative; }
+  .btn:link:hover,
+  .btn:visited:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 0, 179, 0.541); }
+  .btn:link:active,
+  .btn:visited:active {
+    transform: translateY(-1px); }
+  .btn:link::after,
+  .btn:visited::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s; }
+  .btn:link:hover::after,
+  .btn:visited:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
 
 .collage {
   padding: 20px 20px 80px;
@@ -175,6 +212,7 @@ h3 {
   height: 35rem;
   text-align: center; }
   .card__side {
+    border-radius: 2px;
     height: 35rem;
     transition: all .8s ease;
     position: absolute;
@@ -183,10 +221,12 @@ h3 {
     width: 100%;
     backface-visibility: hidden;
     overflow: hidden;
-    box-shadow: -0.2rem -0.2rem 1rem white, 0.2rem 0.2rem 1rem white, 0 0 2rem var(--neon-text-color), 0 0 4rem var(--neon-text-color); }
+    box-shadow: 0 1.5rem 4rem rgba(255, 0, 179, 0.541); }
     .card__side--front {
       background-color: white;
       padding: 20px; }
+      .card__side--front p {
+        color: black; }
     .card__side--back {
       background-image: linear-gradient(to bottom right, white, pink);
       color: black;
@@ -200,5 +240,10 @@ h3 {
     height: 23rem; }
     .card__image--1 {
       background-image: url(../assets/milk2.png); }
+  .card__links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 /*with BEM (block element modifier)*/

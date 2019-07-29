@@ -7,7 +7,7 @@
 
     &__side {
         
-        // border-radius: 2px;
+        border-radius: 2px;
         height: 35rem;
         transition: all .8s ease;
         position: absolute;
@@ -16,19 +16,25 @@
         width: 100%;
         backface-visibility: hidden;
         overflow: hidden;
-        box-shadow:
-        -0.2rem -0.2rem 1rem $color-white,
-        0.2rem 0.2rem 1rem $color-white,
-        0 0 2rem var(--neon-text-color),
-        0 0 4rem var(--neon-text-color);
+        box-shadow: 0 1.5rem 4rem $color-pink-dark; 
+        // box-shadow:
+        // -0.2rem -0.2rem 1rem $color-white,
+        // 0.2rem 0.2rem 1rem $color-white,
+        // 0 0 2rem var(--neon-text-color),
+        // 0 0 4rem var(--neon-text-color);
         
 
         &--front {
             background-color: $color-white;
             padding: 20px;
+            
+            p {
+                color: $color-black;
+            }
         }
 
         &--back {
+            // border: 20px solid $color-white;
             background-image: linear-gradient(to bottom right, $color-white, $color-pink);
             color: $color-black;
             transform: rotateY(180deg);
@@ -52,6 +58,14 @@
         &--1 {
             background-image: url(../assets/milk2.png);
         }
+    }
+
+    //back side
+    &__links {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     
