@@ -13,7 +13,7 @@
 }
 
 #one {
-    grid-row: 1/span 2;
+    grid-row: 1/span 4;
     grid-column: 7/span 5;
     width: 100%;
     transform: rotate(6deg);
@@ -22,7 +22,7 @@
 }
 
 #two {
-    grid-row: 3/span 2;
+    grid-row: 3/span 4;
     grid-column: 6/span 5;
     width: 100%;
     transform: rotate(-6deg);
@@ -31,10 +31,19 @@
 }
 
 #three {
-    grid-row: 5/span 2;
+    grid-row: 5/span 4;
     grid-column: 7/span 5;
     width: 100%;
     transform: rotate(4deg);
+    border-radius: 2px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+}
+
+#four {
+    grid-row: 7/span 4;
+    grid-column: 6/span 5;
+    width: 85%;
+    transform: rotate(8deg);
     border-radius: 2px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
 }
