@@ -111,18 +111,14 @@ h3 {
   padding-bottom: 10rem;
   background-image: linear-gradient(0deg, black, rgba(255, 0, 179, 0.541) 40%); }
 
-.about-title-1 {
-  grid-row: 2/span 7;
-  grid-column: 1/span 5;
-  background-color: pink;
-  padding: 100px;
-  border-radius: 2px; }
-  .about-title-1 p {
-    color: black; }
-
 .section-projects {
   background-image: linear-gradient(0deg, rgba(255, 0, 179, 0.541), black 40%);
   padding: 10rem 2rem 20rem 2rem; }
+
+.section-contact {
+  height: 100vh;
+  padding: 15rem 10rem;
+  background-image: linear-gradient(0deg, black, rgba(255, 0, 179, 0.541) 40%); }
 
 .btn-text:link, .btn-text:visited {
   color: white;
@@ -214,6 +210,15 @@ h3 {
   border-radius: 2px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
 
+.about-title-1 {
+  grid-row: 2/span 7;
+  grid-column: 1/span 5;
+  background-color: pink;
+  padding: 100px;
+  border-radius: 2px; }
+  .about-title-1 p {
+    color: black; }
+
 .card {
   perspective: 150rem;
   position: relative;
@@ -263,5 +268,11 @@ h3 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+
+.contact {
+  background-image: linear-gradient(105deg, pink 0%, pink 60%, transparent 40%), url(../assets/contact2.jpg);
+  height: 50rem;
+  border-radius: 2px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
 
 /*with BEM (block element modifier)*/

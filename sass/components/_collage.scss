@@ -47,3 +47,15 @@
     border-radius: 2px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
 }
+
+.about-title-1 {
+    grid-row: 2/span 7;
+    grid-column: 1/span 5;
+    background-color: $color-pink;
+    padding: 100px;
+    border-radius: 2px;
+
+    p {
+        color: $color-black;
+    }
+}
