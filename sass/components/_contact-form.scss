@@ -1,5 +1,5 @@
 .contact {
-    height: 50rem;
+    height: 55rem;
     border-radius: 2px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .40);
     
@@ -18,7 +18,53 @@
         background-color: $color-pink;
         width: 100%;
         height: 100%;
-        
+        padding: 6rem;
+        text-align: center;
+    }
+}
+
+.form {
+
+    &__group:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    &__input {
+        font-size: 2rem;
+        font-family: inherit;
+        color: $color-black;
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        background-color: rgba($color-white, .5);
+        border: none;
+        border-bottom: 3px solid transparent;
+        width: 100%;
+        display: block;
+        max-height: 200px;
+        overflow: auto;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, .2);
+            border-bottom: 3px solid $color-pink-dark-solid;
+        }
+
+        &::placeholder {
+            color: $color-black;
+        }
+    }
+
+    &__label {
+        font-size: 2rem;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+    }
+
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
     }
 }
 
