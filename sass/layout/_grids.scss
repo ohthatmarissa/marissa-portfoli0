@@ -1,15 +1,22 @@
 //home page about
-.grid {
+.about-grid {
     display: grid;
     grid-template-rows: repeat(10, 1fr);
     grid-template-columns: repeat(12, 1fr);
 }
 
-.grid2 {
+.projects-grid {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 5rem;
+}
+
+.contact-grid {
+    display: grid;
+    height: 50rem;
+    grid-template-rows: 100%;
+    grid-template-columns: 60% 40%;
 }
 
 
