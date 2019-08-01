@@ -18,8 +18,10 @@
     }
 }
 
-.btn:link,
-.btn:visited {
+.btn {
+    &,
+    &:link,
+    &:visited {
     text-transform: uppercase;
     text-decoration: none;
     color: $color-pink-dark-solid;
@@ -28,8 +30,12 @@
     border-radius: 40px;
     background-color: $color-white;
     transition: all .2s;
-    position: relative;
+    position: relative; 
 
+    //button
+    border: none;
+    cursor: pointer;
+    }
 
     &:hover {
         transform: translateY(-3px);

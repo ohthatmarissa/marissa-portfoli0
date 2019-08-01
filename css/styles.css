@@ -75,6 +75,9 @@ h3 {
 .contact-title {
   font-size: 200%; }
 
+p {
+  color: black; }
+
 .header {
   height: 100vh;
   background-color: black;
@@ -112,7 +115,7 @@ h3 {
 
 .contact-grid {
   display: grid;
-  height: 55rem;
+  height: 60rem;
   grid-template-rows: 100%;
   grid-template-columns: 60% 40%; }
 
@@ -142,8 +145,7 @@ h3 {
 .btn-text:active {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
 
-.btn:link,
-.btn:visited {
+.btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   color: #911c6d;
@@ -152,31 +154,33 @@ h3 {
   border-radius: 40px;
   background-color: white;
   transition: all .2s;
-  position: relative; }
-  .btn:link:hover,
-  .btn:visited:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(255, 0, 179, 0.541); }
-  .btn:link:active,
-  .btn:visited:active {
-    transform: translateY(-1px); }
-  .btn:link::after,
-  .btn:visited::after {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 40px;
-    background-color: white;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s; }
-  .btn:link:hover::after,
-  .btn:visited:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0; }
+  position: relative;
+  border: none;
+  cursor: pointer; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(255, 0, 179, 0.541); }
+
+.btn:active {
+  transform: translateY(-1px); }
+
+.btn::after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s; }
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0; }
 
 .collage {
   padding: 20px 20px 80px;
@@ -279,7 +283,7 @@ h3 {
     transform: translate(-50%, -50%); }
 
 .contact {
-  height: 55rem;
+  height: 60rem;
   border-radius: 2px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
   .contact__image {
@@ -296,9 +300,6 @@ h3 {
     height: 100%;
     padding: 6rem;
     text-align: center; }
-
-.form__group:not(:last-child) {
-  margin-bottom: 2rem; }
 
 .form__input {
   font-size: 2rem;

@@ -1,5 +1,5 @@
 .contact {
-    height: 55rem;
+    height: 60rem;
     border-radius: 2px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .40);
     
@@ -25,9 +25,9 @@
 
 .form {
 
-    &__group:not(:last-child) {
-        margin-bottom: 2rem;
-    }
+    // &__group:not(:last-child) {
+    //     margin-bottom: 2rem;
+    // }
 
     &__input {
         font-size: 2rem;
