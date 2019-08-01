@@ -119,6 +119,15 @@ p {
   grid-template-rows: 100%;
   grid-template-columns: 60% 40%; }
 
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(pink, #911c6d); }
+
 .section-about {
   padding-bottom: 10rem;
   background-image: linear-gradient(0deg, black, rgba(255, 0, 179, 0.541) 40%); }
@@ -156,7 +165,9 @@ p {
   transition: all .2s;
   position: relative;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 25px; }
 
 .btn:hover {
   transform: translateY(-3px);
