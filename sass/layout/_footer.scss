@@ -1,17 +1,34 @@
 .footer {
-    background-color: $color-white;
-    padding: 10rem 0;
-    color: white;
+    background-color: $color-black;
+    padding: 10rem;
+   
 
     &__list {
-
+        list-style: none;
     }
 
     &__item {
-
+        display: inline-block;
+        margin-right: 1.5rem;
     }
 
-    &__Link {
+    &__link {
+        &:link,
+        &:visited {
+            color: $color-pink;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+        }
 
+        &:hover,
+        &:active {
+            color: $color-pink-dark-solid;
+        }
+    }
+
+    p {
+        float: right;
+        color: $color-pink;
     }
 }
