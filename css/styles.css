@@ -104,9 +104,10 @@ p {
 
 .footer {
   background-color: black;
-  padding: 10rem; }
+  padding: 0 10rem 10rem 10rem; }
   .footer__list {
-    list-style: none; }
+    list-style: none;
+    text-align: center; }
   .footer__item {
     display: inline-block;
     margin-right: 1.5rem; }
