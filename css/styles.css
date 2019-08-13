@@ -256,6 +256,11 @@ p {
   padding: 15rem 10rem;
   background-image: linear-gradient(0deg, black, rgba(255, 0, 179, 0.541) 40%); }
 
+.section-resources {
+  height: 100vh;
+  background-image: linear-gradient(0deg, rgba(255, 0, 179, 0.541), black 40%);
+  padding-bottom: 10rem; }
+
 .btn-text:link, .btn-text:visited {
   color: white;
   display: inline;
