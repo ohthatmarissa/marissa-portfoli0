@@ -91,7 +91,8 @@ p {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    padding-top: 10rem; }
   .header-primary {
     color: white;
     text-transform: uppercase;
@@ -260,8 +261,8 @@ p {
   background-image: linear-gradient(0deg, black, rgba(255, 0, 179, 0.541) 40%); }
 
 .section-resources {
-  background-image: linear-gradient(0deg, rgba(255, 0, 179, 0.541), black 40%);
-  padding-bottom: 10rem; }
+  background-image: linear-gradient(to bottom, black, rgba(255, 0, 179, 0.541), black);
+  padding: 15rem 2rem 20rem 2rem; }
 
 .btn-text:link, .btn-text:visited {
   color: white;
