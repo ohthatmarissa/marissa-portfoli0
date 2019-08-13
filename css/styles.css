@@ -69,6 +69,9 @@ h3 {
   letter-spacing: 5px;
   text-shadow: 1rem 1rem 2rem black; }
 
+#resource-h3 {
+  text-align: center; }
+
 .project-title {
   color: black;
   text-shadow: none; }
@@ -257,7 +260,6 @@ p {
   background-image: linear-gradient(0deg, black, rgba(255, 0, 179, 0.541) 40%); }
 
 .section-resources {
-  height: 100vh;
   background-image: linear-gradient(0deg, rgba(255, 0, 179, 0.541), black 40%);
   padding-bottom: 10rem; }
 
@@ -395,7 +397,8 @@ p {
     transform: rotateY(0deg); }
   .card__image {
     background-size: cover;
-    height: 23rem; }
+    height: 23rem;
+    border: 1px solid silver; }
     .card__image--1 {
       background-image: url(../assets/milk1.png); }
     .card__image--2 {
@@ -408,6 +411,18 @@ p {
       background-image: url(../assets/budget1.png); }
     .card__image--6 {
       background-image: url(../assets/date1.png); }
+    .card__image--r1 {
+      background-image: url(../assets/img-resize.jpeg); }
+    .card__image--r2 {
+      background-image: url(../assets/fonts.jpg); }
+    .card__image--r3 {
+      background-image: url(../assets/images.jpeg); }
+    .card__image--r4 {
+      background-image: url(../assets/icons.png); }
+    .card__image--r5 {
+      background-image: url(../assets/htmlcss.jpeg); }
+    .card__image--r6 {
+      background-image: url(../assets/colors.png); }
   .card__links {
     position: absolute;
     top: 50%;

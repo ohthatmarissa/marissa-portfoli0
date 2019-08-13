@@ -33,7 +33,6 @@
         }
 
         &--back {
-            // border: 20px solid $color-white;
             background-image: linear-gradient(to bottom right, $color-white, $color-pink);
             color: $color-black;
             transform: rotateY(180deg);
@@ -52,8 +51,10 @@
     &__image {
         background-size: cover;
         height: 23rem;
+        border: 1px solid $color-grey;
         // clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     
+        //project cards
         &--1 {
             background-image: url(../assets/milk1.png);
         }
@@ -76,6 +77,31 @@
 
         &--6 {
             background-image: url(../assets/date1.png);
+        }
+
+        //resources cards
+        &--r1 {
+            background-image: url(../assets/img-resize.jpeg);
+        }
+
+        &--r2 {
+            background-image: url(../assets/fonts.jpg);
+        }
+
+        &--r3 {
+            background-image: url(../assets/images.jpeg);
+        }
+
+        &--r4 {
+            background-image: url(../assets/icons.png);
+        }
+
+        &--r5 {
+            background-image: url(../assets/htmlcss.jpeg);
+        }
+
+        &--r6 {
+            background-image: url(../assets/colors.png);
         }
     }
 
