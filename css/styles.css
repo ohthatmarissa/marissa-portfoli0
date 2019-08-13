@@ -279,6 +279,7 @@ p {
   background-color: white;
   transition: all .2s;
   position: relative;
+  outline: 0;
   border: none;
   cursor: pointer;
   font-family: inherit;
