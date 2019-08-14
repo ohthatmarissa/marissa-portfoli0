@@ -147,9 +147,11 @@ p {
 
 .skills-grid {
   display: grid;
-  height: 40rem;
+  height: 30rem;
   grid-template-rows: 100%;
-  grid-template-columns: repeat(4, 1fr); }
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5rem;
+  margin-left: -6rem; }
 
 .navigation__checkbox {
   display: none; }
@@ -268,7 +270,7 @@ p {
 
 .section-skills {
   background-color: black;
-  padding: 0 2rem 20rem 2rem; }
+  padding: 0 4rem 15rem 4rem; }
 
 .section-resources {
   background-image: linear-gradient(to bottom, black, rgba(255, 0, 179, 0.541), black);
@@ -489,5 +491,12 @@ p {
 .form__input:placeholder-shown + .form__label {
   opacity: 0;
   visibility: hidden; }
+
+svg {
+  color: pink; }
+
+.icon {
+  background-image: linear-gradient(to bottom, yellow, white);
+  clip-path: polygon(99% 0, 76% 32%, 100% 31%, 40% 100%, 52% 53%, 28% 54%, 47% 0); }
 
 /*with BEM (block element modifier)*/
