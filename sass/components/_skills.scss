@@ -3,6 +3,7 @@ svg {
 }
 
 .icon {
-    background-image: linear-gradient(to bottom, yellow, white);
-    clip-path: polygon(99% 0, 76% 32%, 100% 31%, 40% 100%, 52% 53%, 28% 54%, 47% 0);
+    background-image: url(../assets/bolt2.jpg);
+    background-size: cover;
+    background-position: center;
 }

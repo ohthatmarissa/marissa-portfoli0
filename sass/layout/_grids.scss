@@ -21,11 +21,11 @@
 
 .skills-grid {
     display: grid;
-    height: 30rem;
+    height: 40rem;
     grid-template-rows: 100%;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5rem;
-    margin-left: -6rem;
+    margin-left: -2rem;
 }
 
 
