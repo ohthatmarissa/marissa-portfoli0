@@ -87,6 +87,12 @@ p {
   color: black;
   padding-top: 1rem; }
 
+#skills-ul {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  list-style: none; }
+
 .header {
   height: 100vh;
   background-color: black;
