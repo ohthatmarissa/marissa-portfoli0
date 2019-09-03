@@ -1,44 +1,43 @@
-body{
-    font-family: 'Bahianita', cursive;
-    font-weight: 400;
-    font-size: 25px;
-    letter-spacing: 1px;
-    line-height: 1.7;
-    color: $color-white;
-    padding: 30px;
-    background-color: $color-black;
+body {
+  font-family: "Bahianita", cursive;
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: 1px;
+  line-height: 1.7;
+  color: $color-white;
+  padding: 30px;
+  background-color: $color-black;
 }
 
 h1::-moz-selection {
-    color: var(--neon-text-color);
-  }
-  
-  h1::selection {
-    color: var(--neon-text-color);
-  }
-  
-  h1:focus {
-    outline: none;
-  }
-  
+  color: var(--neon-text-color);
+}
+
+h1::selection {
+  color: var(--neon-text-color);
+}
+
+h1:focus {
+  outline: none;
+}
 
 .header-secondary {
-    text-align: center;
-    text-transform: uppercase;
-    display: block;
-    letter-spacing: 15px;
-    animation: flicker 15s infinite alternate; 
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  letter-spacing: 15px;
+  animation: flicker 15s infinite alternate;
 }
 
 h2 {
-    font-size: 4em;
-    font-weight: bold;
+  font-size: 4em;
+  font-weight: bold;
 }
 
 h3 {
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    text-shadow: 1rem 1rem 2rem $color-black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 1rem 1rem 2rem $color-black;
 }
 
 #resource-h3 {
@@ -56,6 +55,8 @@ h3 {
 
 p {
   color: $color-black;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
 }
 
 #skills-h3 {
