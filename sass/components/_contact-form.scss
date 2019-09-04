@@ -33,7 +33,7 @@
     border-bottom: 3px solid transparent;
     width: 100%;
     display: block;
-    max-height: 200px;
+    max-height: 20rem;
     overflow: auto;
 
     &:focus {
@@ -45,7 +45,7 @@
     &::placeholder {
       color: $color-black;
       font-family: "Titillium Web", sans-serif;
-      font-size: 20px;
+      font-size: 2rem;
     }
   }
 

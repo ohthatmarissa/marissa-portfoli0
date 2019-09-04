@@ -1,17 +1,37 @@
+/*
+0-600px: phone
+600-900px: tablet portrait
+900-1200px: tablet landscape
+1200-1800: normal desktop
+1800 +: big desktop
+
+1em = 16px
+
+order: Base, Typography, general layout, grid, page layout, components
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-500px); }
+    transform: translateX(-50rem); }
   100% {
     opacity: 1;
     transform: translate(0); } }
 
 /* Animate neon flicker */
 @keyframes flicker {
-  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
     text-shadow: -0.2rem -0.2rem 1rem white, 0.2rem 0.2rem 1rem white, 0 0 2rem var(--neon-text-color), 0 0 4rem var(--neon-text-color), 0 0 6rem var(--neon-text-color), 0 0 8rem var(--neon-text-color), 0 0 10rem var(--neon-text-color);
     box-shadow: 0 0 0.5rem white, inset 0 0 0.5rem white, 0 0 2rem var(--neon-border-color), inset 0 0 2rem var(--neon-border-color), 0 0 4rem var(--neon-border-color), inset 0 0 4rem var(--neon-border-color); }
-  20%, 24%, 55% {
+  20%,
+  24%,
+  55% {
     text-shadow: none;
     box-shadow: none; } }
 
@@ -33,15 +53,24 @@ body {
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 30%; } }
 
 body {
   font-family: "Bahianita", cursive;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 2.5rem;
   letter-spacing: 1px;
   line-height: 1.7;
   color: white;
-  padding: 30px;
+  padding: 3rem;
   background-color: black; }
 
 h1::-moz-selection {
@@ -82,7 +111,7 @@ h3 {
 p {
   color: black;
   font-family: "Titillium Web", sans-serif;
-  font-size: 20px; }
+  font-size: 2rem; }
 
 #skills-h3 {
   text-align: center;
@@ -306,9 +335,9 @@ p {
   text-decoration: none;
   color: #911c6d;
   letter-spacing: 3px;
-  padding: 5px 40px;
+  padding: 0.5rem 4rem;
   display: inline-block;
-  border-radius: 40px;
+  border-radius: 4rem;
   background-color: white;
   transition: all 0.2s;
   position: relative;
@@ -316,11 +345,11 @@ p {
   border: none;
   cursor: pointer;
   font-family: inherit;
-  font-size: 25px; }
+  font-size: 2.5rem; }
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(255, 0, 179, 0.541); }
+  box-shadow: 0 1rem 2rem rgba(255, 0, 179, 0.541); }
 
 .btn:active {
   transform: translateY(-1px); }
@@ -330,7 +359,7 @@ p {
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 40px;
+  border-radius: 4rem;
   background-color: white;
   position: absolute;
   top: 0;
@@ -343,49 +372,49 @@ p {
   opacity: 0; }
 
 .collage {
-  padding: 20px 20px 80px;
+  padding: 2rem 2rem 8rem;
   background-color: white; }
 
 .collage:hover {
   transform: scale(1.25) translateY(5px) !important;
-  transition: all .3s;
+  transition: all 0.3s;
   z-index: 1; }
 
 #one {
-  grid-row: 1/span 4;
-  grid-column: 7/span 5;
+  grid-row: 1 / span 4;
+  grid-column: 7 / span 5;
   width: 100%;
   transform: rotate(6deg);
   border-radius: 2px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
 
 #two {
-  grid-row: 3/span 4;
-  grid-column: 6/span 5;
+  grid-row: 3 / span 4;
+  grid-column: 6 / span 5;
   width: 100%;
   transform: rotate(-6deg);
   border-radius: 2px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
 
 #three {
-  grid-row: 5/span 4;
-  grid-column: 8/span 5;
+  grid-row: 5 / span 4;
+  grid-column: 8 / span 5;
   width: 85%;
   transform: rotate(0deg);
   border-radius: 2px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
 
 #four {
-  grid-row: 7/span 4;
-  grid-column: 6/span 5;
+  grid-row: 7 / span 4;
+  grid-column: 6 / span 5;
   width: 100%;
   transform: rotate(18deg);
   border-radius: 2px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
 
 .about-title-1 {
-  grid-row: 2/span 7;
-  grid-column: 1/span 5;
+  grid-row: 2 / span 7;
+  grid-column: 1 / span 5;
   background-color: pink;
   padding: 100px;
   border-radius: 2px; }
@@ -400,7 +429,7 @@ p {
   .card__side {
     border-radius: 2px;
     height: 35rem;
-    transition: all .8s ease;
+    transition: all 0.8s ease;
     position: absolute;
     top: 0;
     left: 0;
@@ -410,7 +439,7 @@ p {
     box-shadow: 0 1.5rem 4rem rgba(255, 0, 179, 0.541); }
     .card__side--front {
       background-color: white;
-      padding: 20px; }
+      padding: 2rem; }
       .card__side--front p {
         color: black; }
     .card__side--back {
@@ -484,7 +513,7 @@ p {
   border-bottom: 3px solid transparent;
   width: 100%;
   display: block;
-  max-height: 200px;
+  max-height: 20rem;
   overflow: auto; }
   .form__input:focus {
     outline: none;
@@ -493,7 +522,7 @@ p {
   .form__input::placeholder {
     color: black;
     font-family: "Titillium Web", sans-serif;
-    font-size: 20px; }
+    font-size: 2rem; }
 
 .form__label {
   font-size: 2rem;

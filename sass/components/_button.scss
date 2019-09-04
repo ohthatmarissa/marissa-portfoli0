@@ -25,9 +25,9 @@
     text-decoration: none;
     color: $color-pink-dark-solid;
     letter-spacing: 3px;
-    padding: 5px 40px;
+    padding: 0.5rem 4rem;
     display: inline-block;
-    border-radius: 40px;
+    border-radius: 4rem;
     background-color: $color-white;
     transition: all 0.2s;
     position: relative;
@@ -37,12 +37,12 @@
     border: none;
     cursor: pointer;
     font-family: inherit;
-    font-size: 25px;
+    font-size: 2.5rem;
   }
 
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px $color-pink-dark;
+    box-shadow: 0 1rem 2rem $color-pink-dark;
   }
 
   &:active {
@@ -54,7 +54,7 @@
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 40px;
+    border-radius: 4rem;
     background-color: $color-white;
     position: absolute;
     top: 0;

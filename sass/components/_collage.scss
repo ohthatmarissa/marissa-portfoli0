@@ -1,60 +1,60 @@
 .collage {
-    padding: 20px 20px 80px;
-    background-color: $color-white;
+  padding: 2rem 2rem 8rem;
+  background-color: $color-white;
 }
 
 .collage:hover {
-    transform: scale(1.25) translateY(5px) !important;
-    transition: all .3s;
-    z-index: 1;
-    // outline: 1.5rem solid $color-white;
-    // outline-offset: 2rem;
+  transform: scale(1.25) translateY(5px) !important;
+  transition: all 0.3s;
+  z-index: 1;
+  // outline: 1.5rem solid $color-white;
+  // outline-offset: 2rem;
 }
 
 #one {
-    grid-row: 1/span 4;
-    grid-column: 7/span 5;
-    width: 100%;
-    transform: rotate(6deg);
-    border-radius: 2px;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+  grid-row: 1 / span 4;
+  grid-column: 7 / span 5;
+  width: 100%;
+  transform: rotate(6deg);
+  border-radius: 2px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
 }
 
 #two {
-    grid-row: 3/span 4;
-    grid-column: 6/span 5;
-    width: 100%;
-    transform: rotate(-6deg);
-    border-radius: 2px;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+  grid-row: 3 / span 4;
+  grid-column: 6 / span 5;
+  width: 100%;
+  transform: rotate(-6deg);
+  border-radius: 2px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
 }
 
 #three {
-    grid-row: 5/span 4;
-    grid-column: 8/span 5;
-    width: 85%;
-    transform: rotate(0deg);
-    border-radius: 2px;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+  grid-row: 5 / span 4;
+  grid-column: 8 / span 5;
+  width: 85%;
+  transform: rotate(0deg);
+  border-radius: 2px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
 }
 
 #four {
-    grid-row: 7/span 4;
-    grid-column: 6/span 5;
-    width: 100%;
-    transform: rotate(18deg);
-    border-radius: 2px;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+  grid-row: 7 / span 4;
+  grid-column: 6 / span 5;
+  width: 100%;
+  transform: rotate(18deg);
+  border-radius: 2px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
 }
 
 .about-title-1 {
-    grid-row: 2/span 7;
-    grid-column: 1/span 5;
-    background-color: $color-pink;
-    padding: 100px;
-    border-radius: 2px;
+  grid-row: 2 / span 7;
+  grid-column: 1 / span 5;
+  background-color: $color-pink;
+  padding: 100px;
+  border-radius: 2px;
 
-    p {
-        color: $color-black;
-    }
+  p {
+    color: $color-black;
+  }
 }
