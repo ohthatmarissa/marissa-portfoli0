@@ -5,20 +5,12 @@ body {
   letter-spacing: 1px;
   line-height: 1.7;
   color: $color-white;
-  padding: 3rem;
   background-color: $color-black;
 }
 
-h1::-moz-selection {
+h1::-moz-selection,
+::selection {
   color: var(--neon-text-color);
-}
-
-h1::selection {
-  color: var(--neon-text-color);
-}
-
-h1:focus {
-  outline: none;
 }
 
 .header-secondary {
@@ -69,4 +61,5 @@ p {
   text-align: center;
   text-decoration: none;
   list-style: none;
+  height: 40rem;
 }
