@@ -1,7 +1,7 @@
 # Portfolio
 
 #### A professional portfolio diplaying my pprojects and skills
-#### You can check it out here: CURRENT PROJECT: NOT DEPLOYED YET
+#### You can check it out here: https://ohthatmarissa.github.io/marissa-portfolio/
 
 #### By **Marissa Perry**
 
@@ -20,12 +20,8 @@ A website created with HTML, SASS, and Node that is a beautiful visual display o
 
 ## Setup/Installation Requirements
 
-1. Clone this repository 
-2.
-3.  
-4. Enjoy!
-
-##See below for more on React
+1. Clone this repository
+2. Enjoy!
 
 ## Known Bugs
 * No known bugs at this time.
