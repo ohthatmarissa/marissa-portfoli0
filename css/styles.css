@@ -44,14 +44,13 @@ order: Base, Typography, general layout, grid, page layout, components
 
 :root {
   /* Base font size */
-  font-size: 10px;
   /* Set neon color */
   --neon-text-color: hotpink; }
 
 body {
   box-sizing: border-box;
   padding: 3rem; }
-  @media (max-width: 56.25em) {
+  @media (max-width: 56.2em) {
     body {
       padding: 0; } }
 
@@ -59,18 +58,21 @@ html {
   font-size: 62.5%; }
   @media (max-width: 75em) {
     html {
-      font-size: 56.25%; } }
-  @media (max-width: 56.25em) {
-    html {
       font-size: 50%; } }
+  @media (max-width: 56.2em) {
+    html {
+      font-size: 38%; } }
   @media (max-width: 37.5em) {
     html {
-      font-size: 30%; } }
+      font-size: 20%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 80%; } }
 
 body {
   font-family: "Bahianita", cursive;
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   letter-spacing: 1px;
   line-height: 1.7;
   color: white;
@@ -88,7 +90,7 @@ h1::-moz-selection,
   animation: flicker 15s infinite alternate; }
 
 h2 {
-  font-size: 4em;
+  font-size: 4rem;
   font-weight: bold; }
 
 h3 {
