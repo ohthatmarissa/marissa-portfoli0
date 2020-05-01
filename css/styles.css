@@ -58,16 +58,16 @@ html {
   font-size: 62.5%; }
   @media (max-width: 75em) {
     html {
-      font-size: 50%; } }
+      font-size: 56.25%; } }
   @media (max-width: 56.2em) {
     html {
-      font-size: 38%; } }
+      font-size: 50%; } }
   @media (max-width: 37.5em) {
     html {
-      font-size: 20%; } }
+      font-size: 40%; } }
   @media (min-width: 112.5em) {
     html {
-      font-size: 80%; } }
+      font-size: 100%; } }
 
 body {
   font-family: "Bahianita", cursive;
@@ -141,9 +141,11 @@ p {
     text-align: center;
     animation: moveInLeft 5s; }
   .header-primary--main {
+    display: block;
     font-size: 17rem;
     font-weight: 400;
     font-style: italic;
+    letter-spacing: 15px;
     animation: flicker 4s infinite alternate; }
   .header-primary--sub {
     display: block;
