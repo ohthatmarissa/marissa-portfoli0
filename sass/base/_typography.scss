@@ -19,6 +19,10 @@ h1::-moz-selection,
   display: block;
   letter-spacing: 15px;
   animation: flicker 15s infinite alternate;
+
+  @include respond(tab-port) {
+    letter-spacing: 10px;
+  }
 }
 
 h2 {

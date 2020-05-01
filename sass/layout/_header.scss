@@ -27,11 +27,20 @@
         font-style: italic;
         letter-spacing: 15px;
         animation: flicker 4s infinite alternate;
+
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-size: 10rem;
+        }
     }
 
     &-primary--sub {
         display: block;
         letter-spacing: 15px;
         animation: flicker 20s infinite alternate;
+
+        @include respond(phone) {
+            letter-spacing: 5px;
+        }
     }
 }
