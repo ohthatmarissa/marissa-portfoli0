@@ -83,6 +83,7 @@ h1::-moz-selection,
   color: var(--neon-text-color); }
 
 .header-secondary {
+  font-size: 6rem;
   text-align: center;
   text-transform: uppercase;
   display: block;
@@ -97,6 +98,7 @@ h2 {
   font-weight: bold; }
 
 h3 {
+  font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: 5px;
   text-shadow: 1rem 1rem 2rem black; }
@@ -155,6 +157,7 @@ p {
         letter-spacing: 1rem;
         font-size: 10rem; } }
   .header-primary--sub {
+    font-size: 5rem;
     display: block;
     letter-spacing: 15px;
     animation: flicker 20s infinite alternate; }
@@ -185,7 +188,7 @@ p {
 .about-grid {
   display: grid;
   grid-template-rows: repeat(9, 1fr);
-  grid-template-columns: repeat(12, 1fr); }
+  grid-template-columns: repeat(auto-fit, minmax(12, 1fr)); }
 
 .projects-grid {
   display: grid;
@@ -205,6 +208,10 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 5rem;
   margin-left: -2rem; }
+  @media (max-width: 56.2em) {
+    .skills-grid {
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr); } }
 
 .navigation__checkbox {
   display: none; }
