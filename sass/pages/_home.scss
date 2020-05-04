@@ -5,6 +5,10 @@
     @include respond(tab-port) {
         padding-top: 10rem;
     }
+
+    @include respond(phone) {
+        padding-top: 5rem;
+    }
 }
 
 .section-projects {

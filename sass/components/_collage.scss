@@ -18,6 +18,11 @@
   transform: rotate(6deg);
   border-radius: 2px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+
+  @include respond(tab-port) {
+    grid-row: 5 / span 4;
+    grid-column: 2 / span 5;
+  }
 }
 
 #two {
@@ -27,6 +32,11 @@
   transform: rotate(-6deg);
   border-radius: 2px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+
+  @include respond(tab-port) {
+    grid-row: 7 / span 4;
+    grid-column: 7 / span 5;
+  }
 }
 
 #three {
@@ -45,6 +55,11 @@
   transform: rotate(18deg);
   border-radius: 2px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+
+  @include respond(tab-port) {
+    grid-row: 7 / span 4;
+    grid-column: 2 / span 5;
+  }
 }
 
 .about-title-1 {
@@ -53,6 +68,12 @@
   background-color: $color-pink;
   padding: 100px;
   border-radius: 2px;
+
+  @include respond(tab-port) {
+    grid-row: 1 / span 5;
+    grid-column: 1 / span 12;
+    margin: 5rem 5rem;
+  }
 
   p {
     color: $color-black;

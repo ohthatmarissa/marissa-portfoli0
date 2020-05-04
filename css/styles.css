@@ -188,7 +188,7 @@ p {
 .about-grid {
   display: grid;
   grid-template-rows: repeat(9, 1fr);
-  grid-template-columns: repeat(auto-fit, minmax(12, 1fr)); }
+  grid-template-columns: repeat(12, 1fr); }
 
 .projects-grid {
   display: grid;
@@ -338,6 +338,9 @@ p {
   @media (max-width: 56.2em) {
     .section-about {
       padding-top: 10rem; } }
+  @media (max-width: 37.5em) {
+    .section-about {
+      padding-top: 5rem; } }
 
 .section-projects {
   background-image: linear-gradient(0deg, rgba(255, 0, 179, 0.541), black 40%);
@@ -425,6 +428,10 @@ p {
   transform: rotate(6deg);
   border-radius: 2px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
+  @media (max-width: 56.2em) {
+    #one {
+      grid-row: 5 / span 4;
+      grid-column: 2 / span 5; } }
 
 #two {
   grid-row: 3 / span 4;
@@ -433,6 +440,10 @@ p {
   transform: rotate(-6deg);
   border-radius: 2px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
+  @media (max-width: 56.2em) {
+    #two {
+      grid-row: 7 / span 4;
+      grid-column: 7 / span 5; } }
 
 #three {
   grid-row: 5 / span 4;
@@ -449,6 +460,10 @@ p {
   transform: rotate(18deg);
   border-radius: 2px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
+  @media (max-width: 56.2em) {
+    #four {
+      grid-row: 7 / span 4;
+      grid-column: 2 / span 5; } }
 
 .about-title-1 {
   grid-row: 2 / span 7;
@@ -456,6 +471,11 @@ p {
   background-color: pink;
   padding: 100px;
   border-radius: 2px; }
+  @media (max-width: 56.2em) {
+    .about-title-1 {
+      grid-row: 1 / span 5;
+      grid-column: 1 / span 12;
+      margin: 5rem 5rem; } }
   .about-title-1 p {
     color: black; }
 
