@@ -431,7 +431,8 @@ p {
   @media (max-width: 56.2em) {
     #one {
       grid-row: 5 / span 4;
-      grid-column: 2 / span 5; } }
+      grid-column: 2 / span 5;
+      margin-top: 2rem; } }
 
 #two {
   grid-row: 3 / span 4;

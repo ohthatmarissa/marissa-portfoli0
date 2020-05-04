@@ -22,6 +22,7 @@
   @include respond(tab-port) {
     grid-row: 5 / span 4;
     grid-column: 2 / span 5;
+    margin-top: 2rem;
   }
 }
 
