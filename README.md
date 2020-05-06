@@ -1,7 +1,7 @@
 # Portfolio
 
 #### A professional portfolio diplaying my pprojects and skills
-#### You can check it out here: https://ohthatmarissa.github.io/marissa-portfolio/
+#### You can check it out here: https://ohthatmarissa.github.io/marissa-portfoli0/
 
 #### By **Marissa Perry**
 
