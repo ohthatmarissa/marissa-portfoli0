@@ -38,6 +38,11 @@
     grid-row: 7 / span 4;
     grid-column: 7 / span 5;
   }
+
+  @include respond(phone) {
+    grid-row: 6 / span 4;
+    grid-column: 7 / span 5;
+  }
 }
 
 #three {
@@ -59,6 +64,11 @@
 
   @include respond(tab-port) {
     grid-row: 7 / span 4;
+    grid-column: 2 / span 5;
+  }
+
+  @include respond(phone) {
+    grid-row: 6 / span 4;
     grid-column: 2 / span 5;
   }
 }
