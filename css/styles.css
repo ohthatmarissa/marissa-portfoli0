@@ -568,6 +568,27 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+  @media (max-width: 56.2em) {
+    .card {
+      height: auto;
+      box-shadow: 0 1.5rem 4rem rgba(255, 0, 179, 0.541);
+      border-radius: 3px;
+      background-color: white; }
+      .card__side {
+        height: auto;
+        position: relative;
+        box-shadow: none; }
+        .card__side--back {
+          transform: rotateY(0); }
+      .card:hover .card__side--front {
+        transform: rotateY(0); }
+      .card__links {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+        padding: 4rem; } }
 
 .contact {
   border-radius: 2px;
