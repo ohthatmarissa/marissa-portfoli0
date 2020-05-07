@@ -361,6 +361,9 @@ p {
 .section-contact {
   padding: 5rem 10rem 15rem 10rem;
   background-image: linear-gradient(0deg, black, rgba(255, 0, 179, 0.541) 40%); }
+  @media (max-width: 37.5em) {
+    .section-contact {
+      padding: 3rem 10rem 3rem 10rem; } }
 
 .section-skills {
   background-color: black;
@@ -573,7 +576,11 @@ p {
       height: auto;
       box-shadow: 0 1.5rem 4rem rgba(255, 0, 179, 0.541);
       border-radius: 3px;
-      background-color: white; }
+      background-color: white;
+      width: 90%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
       .card__side {
         height: auto;
         position: relative;
@@ -593,6 +600,10 @@ p {
 .contact {
   border-radius: 2px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
+  @media (max-width: 37.5em) {
+    .contact {
+      margin-left: -22px;
+      margin-right: -22px; } }
   .contact__image {
     grid-row: 1 / span 1;
     grid-column: 2 / span 1;

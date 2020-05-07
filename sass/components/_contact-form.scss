@@ -2,6 +2,11 @@
   border-radius: 2px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
 
+  @include respond(phone) {
+    margin-left: -22px;
+    margin-right: -22px;
+  }
+
   &__image {
     grid-row: 1 / span 1;
     grid-column: 2 / span 1;

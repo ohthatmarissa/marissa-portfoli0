@@ -19,6 +19,10 @@
 .section-contact {
     padding: 5rem 10rem 15rem 10rem;
     background-image: linear-gradient(0deg, $color-black, $color-pink-dark 40%);
+
+    @include respond(phone) {
+        padding: 3rem 10rem 3rem 10rem;
+    }
 }
 
 .section-skills {
