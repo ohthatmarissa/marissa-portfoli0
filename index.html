@@ -8,6 +8,7 @@
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bahianita|Titillium+Web&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script>function closeNav() { document.getElementById("navi-toggle").checked = false; }</script>
     <title>Marissa Perry</title>
 </head>
 
@@ -19,12 +20,16 @@
         <div class="navigation__background">&nbsp;</div>
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="#about" target="self" class="navigation__link">About Me</a></li>
-                <li class="navigation__item"><a href="#projects" target="self" class="navigation__link">Projects</a>
+                <li class="navigation__item"><a href="#about" class="navigation__link" onclick="closeNav()">About Me</a>
                 </li>
-                <li class="navigation__item"><a href="#contact" target="self" class="navigation__link">Contact Me</a>
+                <li class="navigation__item"><a href="#projects" class="navigation__link"
+                        onclick="closeNav()">Projects</a>
                 </li>
-                <li class="navigation__item"><a href="./resources.html" class="navigation__link">Resources</a></li>
+                <li class="navigation__item"><a href="#contact" class="navigation__link" onclick="closeNav()">Contact
+                        Me</a>
+                </li>
+                <li class="navigation__item"><a href="./resources.html" class="navigation__link"
+                        target="_blank">Resources</a></li>
 
             </ul>
         </nav>
